@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+  </head>
+  <body>
+    <h1>Welcome to inheritance</h1>
+  </body>
+</html>
+<script>
+  let arr = [];
+  let person = {
+    leg: "two",
+    hand: "two",
+    inteligence: true,
+  };
+
+  let ram = Object.create(person);
+  ram.age = 20;
+  let shyam = Object.create(person);
+  shyam.age = 22;
+  let ramesh = Object.create(person);
+  ramesh.age = 2;
+  // console.log(ram);
+  arr.push(ram);
+  arr.push(shyam);
+  arr.push(ramesh);
+
+  console.log(arr);
+</script>
